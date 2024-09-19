@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pocketgg Privacy Policy</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel='icon' href='../images/favicon.ico' type='image/x-icon'/>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="header-app">
+                <a href="../" target="_self"><img class="header-app-icon" src="../images/appicon.png"></a>
+                <h3>pocketgg</h3>
+            </div>
+            <nav class="header-links">
+                <ul>
+                    <li><a href="/changelog/" target="_self">What's New</a></li>
+                    <li><a href="/privacy/" target="_self">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Privacy Policy</h1>
+        <div class="container">
+            <div class="privacy-text">
+                <h2>start.gg API & Authentication</h2>
+                <p>
+                    pocketgg uses start.gg's GraphQL API to retrieve data, such as tournament details.
+                    To access any information in the app, you must log in to start.gg via its OAuth 2.0 flow.
+                    The OAuth 2.0 flow allows third party applications (in this case, pocketgg) to access and utilize information about the user
+                    (for example, displaying a list of your recent tournaments in pocketgg).
+                    The OAuth 2.0 flow involves typing in your username and password in order to log into start.gg and authorize pocketgg, however neither your username or password are stored by pocketgg;
+                    the authentication is done on start.gg itself, and pocketgg is never given access to your password.
+                </p>
+                <p>
+                    At the end of a successful authentication flow, the start.gg servers will send pocketgg an access token, which is subsequently used to fetch data from start.gg's servers.
+                    The access token is stored securely on the user's iOS Keychain, and is never sent to an external server (besides being used for authentication for start.gg's servers).
+                    A refresh token is also returned from the start.gg servers, this is used to periodically refresh the access token, and ensure that the user's session remains valid.
+                </p>
+                <p>
+                    Both the access and refresh token do not provide pocketgg access to your start.gg password, and any personal details displayed in pocketgg
+                    (eg. the profile screen with your gamertag and recent tournaments) are never sent to an external server.
+                </p>
+                <p>
+                    To learn more about the OAuth 2.0 flow, please visit 
+                    <a href="https://developer.start.gg/docs/oauth/oauth-overview" target="_blank">start.gg's OAuth Overview</a>,
+                    as well as 
+                    <a href="https://datatracker.ietf.org/doc/html/rfc6749" target="_blank">the official OAuth 2.0 specification</a>.
+                </p>
+
+                <h2>Location</h2>
+                <p>
+                    pocketgg includes an option to only load tournaments near your location.
+                    If this option is enabled, pocketgg will send a location services request, at which point a system dialog will appear, asking for permission to grant pocketgg one-time access to your location.
+                    If granted, your current location is saved to pocketgg in the form of latitude/longitude coordinates, which are sent to start.gg during API requests to only have tournaments near those coordinates returned.
+                    This feature is completely optional, the location is never linked to the user's identity, and the information is never stored on an external server.
+                </p>
+                <p>
+                    To learn more about the privacy of Location Services on iOS, please visit 
+                    <a href="https://support.apple.com/en-ca/102515" target="_blank">Apple's article about privacy and Location Services in iOS, iPadOS, and watchOS</a>.
+                </p>
+
+                <h2>Changes to this Privacy Policy</h2>
+                <p>
+                    This Privacy Policy may be updated from time to time. Please check this page periodically for any changes.
+                </p>
+
+                <br>
+
+                <p><b>Last Updated: September 21, 2024</b></p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

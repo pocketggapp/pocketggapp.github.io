@@ -1,10 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>pocket.gg</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pocketgg</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon'/>
+    <script src="https://kit.fontawesome.com/d462393c60.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    pocket.gg Website
+    <header>
+        <div class="header-container">
+            <div class="header-app">
+                <a href="../" target="_self"><img class="header-app-icon" src="images/appicon.png"></a>
+                <h3>pocketgg</h3>
+            </div>
+            <nav class="header-links">
+                <ul>
+                    <li><a href="/changelog/" target="_self">What's New</a></li>
+                    <li><a href="/privacy/" target="_self">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="main-content">
+                <img src="images/appicon.png" alt="App Icon" class="app-icon">
+                <div class="main-text">
+                    <h1>pocketgg</h1>
+                    <h2>A beautiful, native iOS app for start.gg</h2>
+                </div>
+            </div>
+
+            <p class="description">pocketgg aims to provide the cleanest and fastest experience available for using start.gg on mobile. Powered by start.gg's GraphQL API and featuring a fully native iOS design, pocketgg is the go-to companion app for video game tournament competitors and spectators alike.</p>
+            
+            <div class="img-container">
+                <picture>
+                    <source srcset="images/website-landing.png" media="(prefers-color-scheme: light)"/>
+                    <source srcset="images/website-landing-dark.png"  media="(prefers-color-scheme: dark)"/>
+                    <img src="images/website-landing.png"/>
+                </picture>
+            </div>
+            
+            <a href="https://apps.apple.com/app/id1576064097"><img src="images/appstore_download.svg" alt="Download button" class="download-button"></a>
+
+            <div class="grid-container">
+                    <div class="item-content">
+                        <div>
+                            <span class="fa-stack fa-1x">
+                                <i class="itemColor fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-gamepad fa-stack-1x" style="color: #e74c3c;"></i>
+                              </span>
+                        </div>
+                        <div class="item-text">
+                            <h3>Discover Tournaments</h3>
+                            <p>Select your favourite games and find all of the upcoming tournaments that feature those games, both in-person and online. You can also search to find any tournament hosted on start.gg.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-content">
+                        <div>
+                            <span class="fa-stack fa-1x">
+                                <i class="itemColor fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-circle-info fa-stack-1x" style="color: #e74c3c;"></i>
+                              </span>
+                        </div>
+                        <div class="item-text">
+                            <h3>Details at a Glance</h3>
+                            <p>View essential information for every tournament like events, location, streams, all the way down to individual sets, games, and seed numbers.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-content">
+                        <div>
+                            <span class="fa-stack fa-1x">
+                                <i class="itemColor fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-user-group fa-stack-1x" style="color: #e74c3c;"></i>
+                              </span>
+                        </div>
+                        <div class="item-text">
+                            <h3>Stay Connected with your local scene</h3>
+                            <p>Follow tournament organizers to see the next upcoming regional, or all of the locals that you hopefully haven't gone 0-2 in.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="item-content">
+                        <div>
+                            <span class="fa-stack fa-1x">
+                                <i class="itemColor fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-mobile fa-stack-1x" style="color: #e74c3c;"></i>
+                              </span>
+                        </div>
+                        <div class="item-text">
+                            <h3>Native Bracket View</h3>
+                            <p>No more awkward web views that have trouble scrolling or zooming in & out. pocketgg features a native bracket view that allows you to view any single/double elimination or round-robin bracket with ease.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-content">
+                        <div>
+                            <span class="fa-stack fa-1x">
+                                <i class="itemColor fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-list fa-stack-1x" style="color: #e74c3c;"></i>
+                              </span>
+                        </div>
+                        <div class="item-text">
+                            <h3>Your Personal Resume</h3>
+                            <p>Log in using your start.gg account, and view your profile to see all of the recent tournaments that you've entered.</p>
+                        </div>
+                    </div>
+
+                    <div class="item-content">
+                        <div>
+                            <span class="fa-stack fa-1x">
+                                <i class="itemColor fa-solid fa-circle fa-stack-2x"></i>
+                                <i class="fa-solid fa-ellipsis fa-stack-1x" style="color: #e74c3c;"></i>
+                              </span>
+                        </div>
+                        <div class="item-text">
+                            <h3>And More</h3>
+                            <p>pocketgg includes other nice-to-haves, such as the ability to add tournaments to your calendar, and to pin your favourite tournaments for easy access.</p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="/changelog/">What's New</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="mailto:pocketggapp@gmail.com">Contact</a>
+        </div>
+        <p>© 2024 Gabriel Siu</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,225 @@
+/* General */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0 15px 0;
+    text-align: center;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+h1 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.5em;
+}
+
+p {
+    line-height: 1.5;
+}
+
+/* Dark Mode */
+
+:root {
+    --text: #000;
+    --bg: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text: #fff;
+        --bg: #000;
+    }
+}
+
+/* Containers */
+
+.header-container {
+    grid-area: h;
+    display: flex;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* Header */
+
+header {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.header-app {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+}
+
+.header-app>h3 {
+    margin: 0 0 7px 15px;
+    font-weight: 500;
+}
+
+.header-app-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.header-links {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: flex-end;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-size: 1.25rem;
+}
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav>ul li:last-child {
+    padding-right: 15px;
+}
+
+nav>ul li {
+    padding-left: 30px;
+}
+
+nav>ul li a:link, nav>ul li a:visited {
+    color: #7F7F82;
+    text-decoration: none;
+}
+
+/* Main */
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.main-text {
+    text-align: left;
+}
+
+.main-text h2 {
+    color: #7F7F82;
+    font-weight: normal;
+    margin: 10px 0 0 0;
+}
+
+.description {
+    margin: 30px 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.download-button {
+    margin: 30px 0;
+    width: 250px;
+}
+
+/* Grid Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.item-content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+.item-text {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.item-text h3 {
+    margin: 0;
+}
+
+.item-text p {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.itemColor {
+    color: #e4dfdf;
+}
+
+.fa-stack.fa-1x {
+    font-size: 1.25em;
+}
+
+/* Footer */
+
+footer {
+    margin: 70px 0 40px 0;   
+}
+
+footer a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #7F7F82;
+    font-size: 1.25rem;
+}
+
+.footer-links {
+    margin-bottom: 40px;
+}
+
+/* Privacy Policy */
+
+.privacy-text {
+    text-align: start;
+}
+
+/* Changelog */
+
+.changelog-text {
+    text-align: start;
+}
+
+.changelog-text h2 {
+    margin: 20px 0 0 0;
+}
+
+.changelog-text li {
+    line-height: 1.5;
+}
+
+.changelog-date {
+    margin: 5px 0 15px;
+    font-weight: 500;
+}
