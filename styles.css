@@ -12,7 +12,7 @@
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
     --header-bg: rgba(250, 250, 250, 0.72);
     --radius: 20px;
-    --max: 1100px;
+    --max: 1200px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -193,7 +193,7 @@ header {
 }
 
 .download-button {
-    height: 54px;
+    height: 76px;
     margin: 40px 0 8px;
     transition: transform 0.15s;
 }
@@ -203,8 +203,12 @@ header {
 }
 
 .img-container {
-    margin: 56px auto 0;
-    max-width: 960px;
+    /* Break out of the content column so the screenshot can use the full window */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(1600px, calc(100vw - 32px));
+    margin-top: 48px;
 }
 
 .img-container img {
